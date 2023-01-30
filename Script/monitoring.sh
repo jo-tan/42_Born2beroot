@@ -24,6 +24,8 @@ wall \
 	$'\n#Connections TCP : ' `grep "TCP" /proc/net/sockstat | awk '{print $3, $2}'`\
 	$'\n#User log:' `who | wc -l`\
 	$'\n#Network: IP ' `hostname -I` `ip link | grep "link/ether" | awk '{printf "(%s)", $2}'`\
-	$'\nSudo : ' `cat /var/log/sudo/sudo.log | wc -l` "cmd"
+	$'\n#Sudo : ' `cat /var/log/sudo/sudo.log | wc -l` "cmd"
 	
-
+#For this script, the crontab is simply set as */10 * * * * bash /[path]/[to]/monitoring.sh
+#Adventage for put sleep command in this script is 1 script will be done
+#Disadventage is when you test script, the script has to hold for $d minutes first unless you put command to comment(#)  
