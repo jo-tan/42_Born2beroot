@@ -3,9 +3,9 @@ My work for 42 project Bron2beroot (aka b2b)
 
 
 Project Goal:
-+To setup a virtual computer with either Debian or Rocky on vertual environment (I use the Vertualbox)
-+Install the operating system of your choice (Debian/Rocky) and configure your system as required
-+Download any necessary packages and service in your system
+- To setup a virtual computer with either Debian or Rocky on vertual environment (I use the Vertualbox)
+- Install the operating system of your choice (Debian/Rocky) and configure your system as required
+- Download any necessary packages and service in your system
 
 Bonus Part:
 1. Create new partitions and mount the correct directories to new partitions
