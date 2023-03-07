@@ -15,6 +15,35 @@ Bonus Part:
 Turn In:
 The signature (SHA1) of your VM.vdi (Checkout "Snapshot" to save yourself)
 
+## Useful commands
+```
+lsblk //Disk status
+
+hostname //display hostname
+hostnamectl set-hostname <new_name> //change hostname
+nano /etc/hostname //change hostname
+
+service ssh status //secured shell status
+
+ufw status //uncomplicated firewall status
+ufw allow <####> //add new port ####
+ufw delete allow <####> //delete port ####
+ufw delete <line_#_of_the_port> //delete port by its location
+
+nano /etc/pam.d/common-password //edit password policy
+
+visudo //sudo user privilege
+nano /etc/sudoers //sudobuser privilege
+
+groups <user_name> //user's group status
+grep <group_name> /etc/group //check group members
+members <group_name> //check group members, but need to install members package
+adduser <user_name> //create new user and set passwd right away
+useradd <user_name> //add user but set passwd later
+usermod <group_name> <user_name> //add user to group
+addgroup <group_name> //create a new group
+```
+
 ## Key Takeaways
 
 ### Operating System: Debian
